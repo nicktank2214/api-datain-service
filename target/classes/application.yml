@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: datain-service
+
+server:
+  port: 8304
+
+
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8301/eureka/
+  instance:
+    hostname: localhost
